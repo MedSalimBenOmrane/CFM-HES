@@ -515,6 +515,10 @@ def _render_separation_tab(prefix: str, w_np: Optional[np.ndarray]) -> None:
 st.set_page_config(page_title="CFM Demo (HE -> HES)", layout="wide")
 st.title("CFM Demo - HE to HES (Ours)")
 st.caption("CFM-only app with Generation + Separation tabs, and WSSB organ selection.")
+st.markdown(
+    "This demo generates HES images from HE inputs using our CFM model, "
+    "and also provides stain separation tools to inspect HE/HES channels."
+)
 
 with st.sidebar:
     st.header("CFM Settings")
@@ -529,7 +533,7 @@ with st.sidebar:
 
     ckpt_dir = st.text_input(
         "CFM checkpoint directory",
-        value="put path of your data here",
+        value="put path of your checkpoint path here",
     )
     sample_steps = st.number_input("sample_steps (Euler)", min_value=1, max_value=500, value=50, step=1)
 

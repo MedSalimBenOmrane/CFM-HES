@@ -85,7 +85,7 @@ We conducted subjective evaluation on three organs:
 - **breast**
 - **lung**
 
-Patch examples are available in [patch_exemples](patch_exemples).
+Patch examples are available in patch_examples folder.
 
 Subjective evaluation platform:
 
@@ -94,4 +94,5 @@ Subjective evaluation platform:
 ## Notes
 
 - Replace every placeholder path (`put path of your data here`) with your own local paths.
+- To test the model, you can download the checkpoint from: https://zenodo.org/records/18792551?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjJiNjZmNmYyLTY5MGItNGVlNy05YWJmLTZiZDhmOGE0Y2U3NSIsImRhdGEiOnt9LCJyYW5kb20iOiJjNGM3NDQ2ZTRiOGRhODk1YTU5Y2U0MTIzYjNlZjNiOSJ9.-qJt4vnHrlyN0dgfVDdhSROjjhGWVIFMnbGgEeE--cAcB8GuYL_oov-eHHlbm_RJ3Sp5pxzzoGveMmJ2a42Gow
 - This repository is prepared for article submission and anonymized sharing.

@@ -90,6 +90,7 @@ dirichlet/model_final_mnist_dirichlet.pt
 demo/iter*.png
 
 # =========================
-# Important: keep evaluation history in git
-# (do not ignore results/ or evaluate/)
+# Heavy outputs
 # =========================
+results/
+evaluate/

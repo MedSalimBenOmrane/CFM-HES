@@ -1,0 +1,49 @@
+# config/fm_config.yaml
+
+seed: null
+## 1) Data
+data:
+  # path to HES patches (train/, val/, test/)
+  root: "put path of your data here"
+  image_size: 256           # same as DDPM
+  random_flip: true         # horizontal augmentation (optional)
+  num_workers: 1            # adjust for your machine
+
+## 2) Model (U-Net DDPM)
+model:
+  in_channels: 3            # number of input channels (RGB)
+  dim: 128                  # base dimension (number of filters in the first block)
+  dim_mults: [1, 1, 2, 2, 4, 4]  # progressive channel scaling across stages
+  dropout: 0.0              # internal dropout rate
+  resample_with_conv: true  # conv-based up/down-sampling
+  # note: if you use heads/head_dim, add them here as well
+
+## 3) SDE / Flow-Matching
+flow:
+  # time range t ∈ [0, 1] for SDE/Flow
+  t_min: 0.0
+  t_max: 1.0
+  # number of steps if you want discretization
+  num_steps: 1000
+  # ODE integration method (for sampling)
+  solver: "euler_heun"
+
+## 4) Optimisation
+optim:
+  lr: 0.000005
+  beta1: 0.9
+  eps: 0.00000001
+  grad_clip: 0.5
+
+## 5) Training
+training:
+  batch_size: 16           # batch_size_train
+  n_epochs: 100
+  snapshot_freq: 7590      # checkpoint frequency (iterations)
+  validation_freq: 7590    # same for metrics
+  checkpoint_dir: "checkpoints"
+  
+## 6) Sampling (for training-time visualizationalization)
+sampling:
+  batch_size: 16
+  sampling_steps: 1000      # for quick preview generation

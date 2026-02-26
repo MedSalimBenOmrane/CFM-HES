@@ -1,0 +1,17 @@
+.git
+.gitignore
+
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+results/
+evaluate/
+patch_exemples/
+Figures/
+Images/
+
+demo/
+Flow_Matching/
+
+*.ipynb

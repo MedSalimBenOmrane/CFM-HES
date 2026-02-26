@@ -1,0 +1,95 @@
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# Python cache / bytecode
+# =========================
+__pycache__/
+*/__pycache__/*
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# =========================
+# Packaging / build
+# =========================
+build/
+dist/
+.eggs/
+*.egg-info/
+/Flow_Matching.egg-info/*
+pip-wheel-metadata/
+
+# =========================
+# Test / lint / tooling cache
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+demo/.ipynb_checkpoints/
+demo/demo_copy.ipynb
+
+# =========================
+# Logs / experiment trackers
+# =========================
+*.log
+logs/
+wandb/
+mlruns/
+lightning_logs/
+runs/
+
+# =========================
+# Local data / artifacts
+# =========================
+data/
+model/
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Model weight artifacts (local checkpoints)
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.safetensors
+
+# Legacy demo artifacts
+demo/model_final_celeba.pt
+dirichlet/model_final_mnist_dirichlet.pt
+demo/iter*.png
+
+# =========================
+# Important: keep evaluation history in git
+# (do not ignore results/ or evaluate/)
+# =========================

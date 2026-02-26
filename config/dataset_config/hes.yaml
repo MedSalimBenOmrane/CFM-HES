@@ -1,0 +1,14 @@
+  # config/dataset_config/hes.yaml
+hes:
+  # path to HES images (folder containing train/, val/, test/)
+  data_root: "put path of your data here"
+  # path to HE images (folder containing train/, val/, test/)
+  he_root: "put path of your data here"
+
+  # batch sizes (must match main_config.yaml)
+  batch_size_train: 20
+  batch_size_test: 20
+  batch_size_ip: 4
+
+  # DataLoader workers
+  num_workers: 1

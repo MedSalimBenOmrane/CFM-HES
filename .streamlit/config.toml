@@ -1,0 +1,6 @@
+[server]
+# Prevent continuous reruns when files in the workspace are changing.
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false

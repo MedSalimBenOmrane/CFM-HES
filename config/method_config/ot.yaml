@@ -1,0 +1,4 @@
+ot:
+  steps_ode: 100
+  start_time: 0.2
+  gamma: 'constant'
